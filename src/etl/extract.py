@@ -23,7 +23,7 @@ def extract(database:str):
         response = requests.get(url)
 
         if response.status_code == 200:
-            data = response.json()
+            data = response.json().get('value', [])
             df = pd.DataFrame(data)
             df.to_csv(path + 'transations-pix-{}.csv'.format(database), index=False)
             return response.status_code
