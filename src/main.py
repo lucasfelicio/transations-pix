@@ -1,4 +1,4 @@
-from etl.pipeline import full_pipeline
+from etl import pipeline
 
 if __name__ == '__main__':
-    full_pipeline('202301')
+    pipeline.etl_pipeline('202301')

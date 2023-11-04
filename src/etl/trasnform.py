@@ -1,29 +1,30 @@
 '''
 Módulo de tranformação do arquivo CSV armazenado no diretório .data/input
-e gravação no diretório .data/output
+e gravação no diretório .data/output.
 '''
-
 import pandas as pd
-import os
 
-def transform(database:str):
+def transform_data(data_base:str):
     '''
     Função para realizar a transformação dos dados extraidos do diretório .data/input
-    e gravação no diretório .data/output
+    e gravação no diretório .data/output.
 
-    Input: database (str) - Ano e Mês (YYYYMM)
+    Input: data_base (str) - Ano e Mês (YYYYMM).
+           file (str) - Diretório de armazenamento dos dados extraidos.
+           
+    Return: df (DataFrame) - DataFrame com os dados transformados.
     '''
-    path = '.data/output/'
+    filename = '.data/input/transations-pix-{}.csv'.format(data_base)
+    
     try:
-        df = pd.read_csv('.data/input/transations-pix-{}.csv'.format(database))
-                
-        #df['Data'] = pd.to_datetime(df['Data'], format='%Y-%m-%d')
-        
-        if not os.path.exists(path):
-            os.makedirs(path)
-        
-        df.to_csv(path + 'transations-pix-202301.csv', index=False)
+        df = pd.read_csv(filename)
 
+        df['AnoMes'] = df['AnoMes'].astype(str)                
+        df['Ano'] = df['AnoMes'].str[:4]
+        df['Mes'] = df['AnoMes'].str[4:]
+        df = df.drop(['AnoMes'], axis=1)
+
+        return df
         
     except Exception as e:
-        print('Erro ao realizar a transformação dos dados: {}'.format(e))
+        raise Exception('Erro no módulo de transformação: {}'.format(e))
