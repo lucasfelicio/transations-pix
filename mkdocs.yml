@@ -1,0 +1,25 @@
+site_name: Pipeline ETL de Transações Pix
+theme:
+  name: material
+  palette:
+    primary: custom
+  language: pt
+  font:
+    text: Lato
+
+repo_name: "lucasfelicio/transations-pix"
+repo_url: "https://github.com/lucasfelicio/transations-pix"
+
+markdown_extensions:
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+
+plugins:
+  - search
+  - mkdocstrings:
+      default_handler: python
+
+extra_css:
+  - stylesheets/extra.css
