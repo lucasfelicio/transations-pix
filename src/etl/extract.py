@@ -1,6 +1,4 @@
-"""
-Módulo de extração de dados da API dos dados públicos do Banco Central do Brasil (BCB)
-"""
+"""Módulo de extração de dados da API dos dados públicos do Banco Central do Brasil (BCB)."""
 import os
 
 import pandas as pd

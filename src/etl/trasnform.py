@@ -1,14 +1,10 @@
-"""
-Módulo de tranformação do arquivo CSV armazenado no diretório .data/input
-e gravação no diretório .data/output.
-"""
+"""Módulo de tranformação do arquivo CSV armazenado no diretório .data/input e gravação no diretório .data/output."""
 import pandas as pd
 
 
 def transform_data(data_base: str):
     """
-    Função para realizar a transformação dos dados extraidos do diretório .data/input
-    e gravação no diretório .data/output.
+    Função para realizar a transformação dos dados extraidos do diretório .data/input e gravação no diretório .data/output.
 
     Input: data_base (str) - Ano e Mês (YYYYMM).
            file (str) - Diretório de armazenamento dos dados extraidos.

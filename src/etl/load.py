@@ -1,6 +1,4 @@
-"""
-Módulo de carregamento dos datos transformados para o diretório .data/output.
-"""
+"""Módulo de carregamento dos datos transformados para o diretório .data/output."""
 import os
 
 import pandas as pd

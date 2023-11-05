@@ -1,13 +1,10 @@
-"""
-Pipeline principal do projeto.
-"""
+"""pipeline principal do projeto."""
+
 from etl import extract, load, trasnform
 
 
 def etl_pipeline(data_base):
-    """
-    Função principal do Pipeline ETL.
-    """
+    """Função principal do Pipeline ETL."""
     try:
         response = extract.extract_data(data_base)
         if response == 200:
