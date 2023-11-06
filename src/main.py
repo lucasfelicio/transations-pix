@@ -1,6 +1,6 @@
 """pipeline principal do projeto."""
 
-from etl import extract, load, trasnform
+from etl import extract, load, transform
 
 
 def etl_pipeline(data_base):
@@ -8,7 +8,7 @@ def etl_pipeline(data_base):
     try:
         response = extract.extract_data(data_base)
         if response == 200:
-            df = trasnform.transform_data(data_base)
+            df = transform.transform_data(data_base)
             load.load_data(df, data_base)
             print('Pipeline ETL concluído com sucesso')
         else:

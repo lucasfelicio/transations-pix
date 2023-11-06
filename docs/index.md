@@ -1,17 +1,3 @@
-# Welcome to MkDocs
+Este projeto tem como finalidade praticar os conceitos aprendidos no [Workshop](https://lvgalvaofilho.com/) do meste [Luciano Filho](https://github.com/lvgalvao).
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
-
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+Neste projeto é extraido dados de transações de pix da API dos dados públicos do Banco Central do Brasil (BCB).

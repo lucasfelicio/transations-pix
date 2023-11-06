@@ -1,4 +1,4 @@
-from src.etl.trasnform import transform_data
+from etl.transform import transform_data
 
 
 def test_pipeline():

@@ -550,17 +550,6 @@ Markdown = ">=3.3"
 mkdocs = ">=1.1"
 
 [[package]]
-name = "mkdocs-bootstrap386"
-version = "0.0.2"
-description = "A vintage 1980s DOS inspired Twitter Bootstrap theme for MkDocs"
-optional = false
-python-versions = "*"
-files = [
-    {file = "mkdocs-bootstrap386-0.0.2.tar.gz", hash = "sha256:2881970399091d81053afead94ec0013f4aecafd7d65408902f75c737d11ddac"},
-    {file = "mkdocs_bootstrap386-0.0.2-py2.py3-none-any.whl", hash = "sha256:98f5171ff000adeb7043d2a53868aca284dd69f8238ccd032db081c74ca82b0d"},
-]
-
-[[package]]
 name = "mkdocs-material"
 version = "9.4.8"
 description = "Documentation that simply works"
@@ -1533,4 +1522,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = ">=3.9,<3.13"
-content-hash = "cae9276a8658b2186dfe60bc1ec02f2cb32601a1c767b32aa5490791cf9cb08d"
+content-hash = "66c1e4a4a6c2c7943c047fa39e42f312e95e08724c162cb55b3879c13ae30d70"

@@ -11,7 +11,7 @@ def extract_data(data_base: str):
 
     Input: data_base (str) - Ano e Mês a serem extraidos os dados (YYYYMM).
 
-    Output: status_code (int) - Status da requisição HTTP: 200 - OK, 404 - Not Found.
+    Return: status_code (int) - Status da requisição HTTP: 200 - OK, 404 - Not Found.
             path (str) - Diretório de armazenamento dos dados extraidos.
     """
     path = '.data/input/'
