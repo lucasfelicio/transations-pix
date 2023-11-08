@@ -11,17 +11,17 @@ def transform_data(data_base: str):
 
     Return: df (DataFrame) - DataFrame com os dados transformados.
     """
-    filename = '.data/input/transations-pix-{}.csv'.format(data_base)
+    filename = ".data/input/transations-pix-{}.csv".format(data_base)
 
     try:
         df = pd.read_csv(filename)
 
-        df['AnoMes'] = df['AnoMes'].astype(str)
-        df['Ano'] = df['AnoMes'].str[:4]
-        df['Mes'] = df['AnoMes'].str[4:]
-        df = df.drop(['AnoMes'], axis=1)
+        df["AnoMes"] = df["AnoMes"].astype(str)
+        df["Ano"] = df["AnoMes"].str[:4]
+        df["Mes"] = df["AnoMes"].str[4:]
+        df = df.drop(["AnoMes"], axis=1)
 
         return df
 
     except Exception as e:
-        raise Exception('Erro no módulo de transformação: {}'.format(e))
+        raise Exception("Erro no módulo de transformação: {}".format(e))

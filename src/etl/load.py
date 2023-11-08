@@ -10,16 +10,16 @@ def load_data(df, file: str):
 
     Input: df (DataFrame) - DataFrame com os dados transformados.
     """
-    path = '.data/output/'
+    path = ".data/output/"
 
     try:
         if not os.path.exists(path):
             os.makedirs(path)
 
         df.to_csv(
-            path + 'trasations-pix-transformed-{}.csv'.format(file),
+            path + "trasations-pix-transformed-{}.csv".format(file),
             index=False,
         )
 
     except Exception as e:
-        raise Exception('Erro no módulo de carregamento: {}'.format(e))
+        raise Exception("Erro no módulo de carregamento: {}".format(e))
