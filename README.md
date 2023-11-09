@@ -4,7 +4,7 @@
 
 Este projeto tem como finalidade praticar os conceitos aprendidos no [Workshop](https://lvgalvaofilho.com/) do meste [Luciano Filho](https://github.com/lvgalvao).
 
-Neste projeto é extraido dados de transações de pix da API dos dados públicos do Banco Central do Brasil (BCB). 
+Neste projeto é extraido dados de transações de pix da API dos dados públicos do Banco Central do Brasil (BCB).
 
 ### Dentre as principais atividades praticadas estão:
 
@@ -12,7 +12,7 @@ Neste projeto é extraido dados de transações de pix da API dos dados público
 * Trabalhar com ferramentas de desenvolvimento como pyenv e poetry
 * Praticar o versionamento de código
 * Criar testes unitários e de integração
-* Produzir documentações do código desenvolvido 
+* Produzir documentações do código desenvolvido
 * Desenvolver automatizações e CI/CD
 
 ### Requisitos do projeto
@@ -47,7 +47,19 @@ poetry install
 poetry shell
 ```
 
-Com os passos acima o ambiente está pronto para uso. 
+Com os passos acima o ambiente está pronto para uso.
+
+5. Para executar o projeto
+```bash
+task run
+```
+
+6. Para ver a documentação do projeto
+
+7. Para executar os testes do projeto
+```bash
+task test
+```
 
 ### Documentação
 

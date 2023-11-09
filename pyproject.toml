@@ -28,5 +28,6 @@ build-backend = "poetry.core.masonry.api"
 
 [tool.taskipy.tasks]
 run = "python src/main.py"
-format = "isort . && black ."
 test = "pytest -v"
+doc = "mkdocs serve"
+format = "isort . && black ."
