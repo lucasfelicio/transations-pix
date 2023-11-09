@@ -57,8 +57,11 @@ task run
 ```
 
 6. Para ver a documentação do projeto
+```bash
+task doc
+```
 
-7. Para executar os testes do projeto
+8. Para executar os testes do projeto
 ```bash
 task test
 ```
