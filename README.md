@@ -1,5 +1,7 @@
 # Transatios Pix
 
+<img src='/docs/static/ETL.png'>
+
 ## Sobre o projeto
 
 Este projeto tem como finalidade praticar os conceitos aprendidos no [Workshop](https://lvgalvaofilho.com/) do meste [Luciano Filho](https://github.com/lvgalvao).
